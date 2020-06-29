@@ -27,21 +27,21 @@ app.use(express.static(publicDir));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Rosem'
+        name: 'rosem'
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
-        name: 'Rosem'
+        name: 'rosem'
     });
 });
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Do you need any help?',
-        name: 'Rosem'
+        name: 'rosem'
     });
 });
 
@@ -81,14 +81,14 @@ app.get('/weather', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('notFound', {
         message: 'Help article not found!',
-        name: 'Rosem'
+        name: 'rosem'
     });
 });
 
 app.get('*', (req, res) => {
     res.render('notFound', {
         message: 'The page you are looking for doensn*t exist!',
-        name: 'Rosem'
+        name: 'rosem'
     });
 });
 
