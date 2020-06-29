@@ -48,7 +48,7 @@ weatherForm.addEventListener('submit', (event) => {
                 <p> Your requested location is <span class="requested-location">${data.address}</span>
                 <p>We found it like <span class="requested-location">${data.location}</span>. And The weather for  this location is the following:<p>
                 <p>Temperature is <span class="temperature">${data.forecast.temp}</span>. It could feels like the <span class="temperature">${data.forecast.feels_like}</span>. 
-                You can expect ${data.forecast.weather[0].description}.</p>
+                You can expect the ${data.forecast.weather[0].description}.</p>
 
             `
             form.parentNode.insertBefore(weather, form.nextSibling);

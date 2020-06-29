@@ -56,6 +56,11 @@ header .nav .link {
     padding: 8px;
 }
 
+.main-content .forecast {
+    margin-top: 15px ;
+    border-bottom: 1px solid #ccc;
+}
+
 .main-content .forecast .requested-location {
     color: teal;
 }
